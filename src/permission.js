@@ -1,5 +1,4 @@
 import router from './router'
-import store from './store'
 import NProgress from 'nprogress' // progress bar
 import 'nprogress/nprogress.css' // progress bar style
 import getPageTitle from '@/utils/get-page-title'
@@ -12,8 +11,6 @@ router.beforeEach(async(to, from, next) => {
 
   // set page title
   document.title = getPageTitle(to.meta.title)
-
-  store.commit('permission/SET_ROUTES')
 
   next()
 })
