@@ -5,13 +5,16 @@ import Layout from '@/layout'
 const componentsRouter = {
   path: '/components',
   component: Layout,
-  redirect: 'noRedirect',
   name: 'ComponentDemo',
   meta: {
     title: 'Components',
     icon: 'component'
   },
   children: [
+    {
+      path: '',
+      component: () => import('@/views/components-demo/index')
+    },
     {
       path: 'tinymce',
       component: () => import('@/views/components-demo/tinymce'),
