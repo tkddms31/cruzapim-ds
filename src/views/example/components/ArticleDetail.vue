@@ -186,19 +186,11 @@ export default {
         this.postForm.title += `   Article Id:${this.postForm.id}`
         this.postForm.content_short += `   Article Id:${this.postForm.id}`
 
-        // set tagsview title
-        this.setTagsViewTitle()
-
         // set page title
         this.setPageTitle()
       }).catch(err => {
         console.log(err)
       })
-    },
-    setTagsViewTitle() {
-      const title = 'Edit Article'
-      const route = Object.assign({}, this.tempRoute, { title: `${title}-${this.postForm.id}` })
-      this.$store.dispatch('tagsView/updateVisitedView', route)
     },
     setPageTitle() {
       const title = 'Edit Article'

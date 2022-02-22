@@ -36,7 +36,7 @@ export default {
   },
   computed: {
     routes() {
-      return this.$store.getters.permission_routes
+      return this.$router.options.routes
     }
   },
   watch: {

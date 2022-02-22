@@ -38,15 +38,6 @@ const steps = [
       description: 'Switch the system size',
       position: 'left'
     }
-  },
-  {
-    element: '#tags-view-container',
-    popover: {
-      title: 'Tags view',
-      description: 'The history of the page you visited',
-      position: 'bottom'
-    },
-    padding: 0
   }
 ]
 
