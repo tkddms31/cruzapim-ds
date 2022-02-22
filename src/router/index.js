@@ -10,6 +10,7 @@ import Layout from '@/layout'
 import foundationRouter from './modules/foundation'
 import componentsRouter from './modules/components'
 import patternsRouter from './modules/patterns'
+import devTestRouter from './modules/dev-test'
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -89,7 +90,7 @@ export const constantRoutes = [
   foundationRouter,
   componentsRouter,
   patternsRouter,
-
+  devTestRouter,
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]
