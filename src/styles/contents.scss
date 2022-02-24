@@ -58,22 +58,29 @@
   }
 
   .props-table {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .right-menu {
     background: #ffffff;
     border-left: 1px solid #dfe6ec;
     margin-top: 100px;
+    color: #606060;
 
     a {
-      color: #2c3e50;
+      color: #606060;
       cursor: pointer;
 
       &:hover {
         color: #20a0ff;
       }
     }
+
+    .menu-level2 {
+      font-size: 13px;
+      margin-left: 10px;
+    }
+
   }
 
   .content-main {
@@ -107,6 +114,7 @@
   $color-yellow: #dfa904;
   $color-green: #419241;
   $color-blue: #1196bf;
+  $color-white: #606060;
 
   .button {
     text-align: center;
@@ -129,7 +137,7 @@
       color: $color-red; border: solid 1px $color-red;
 
       &:hover {
-        color: #ffffff; background: $color-red;
+        background: $color-red;
       }
     }
 
@@ -137,7 +145,7 @@
       color: $color-orange; border: solid 1px $color-orange;
 
       &:hover {
-        color: #ffffff; background: $color-orange;
+        background: $color-orange;
       }
     }
 
@@ -145,7 +153,7 @@
       color: $color-green; border: solid 1px $color-green;
 
       &:hover {
-        color: #ffffff; background: $color-green;
+        background: $color-green;
       }
     }
 
@@ -153,8 +161,20 @@
       color: $color-blue; border: solid 1px $color-blue;
 
       &:hover {
-        color: #ffffff; background: $color-blue;
+        background: $color-blue;
       }
+    }
+
+    &.white {
+      color: $color-white; border: solid 1px $color-white;
+
+      &:hover {
+        background: $color-white;
+      }
+    }
+
+    &:hover {
+      color: #ffffff;
     }
 
     &:active {
