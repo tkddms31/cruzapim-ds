@@ -1,62 +1,168 @@
 
 .app-container {
-  .title {
-    font-size: 28px;
+  font-size: 14px;
+
+  .title1 {
+    font-size: 32px;
+    margin-bottom: 25px;
   }
-  .sub-title{
+  .title2{
     font-size: 22px;
     font-weight: 500;
+    margin: 30px 0 16px 0;
   }
-  .sub-sub-title {
-    font-size: 18px;
+  .title3 {
+    font-size: 16px;
     font-weight: 500;
+    margin-top: 20px 0 16px 0;
   }
   .description {
-    font-size: 16px;
     font-weight: 500;
   }
 
-  .info {
+  .info-box {
     background: #eef1f6;
     padding: 8px 24px;
     margin-bottom: 20px;
     border-radius: 2px;
     display: block;
     line-height: 32px;
-    font-size: 16px;
     color: #2c3e50;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    &.info {
+      border-left: 3px solid #4f5e71
+    }
+
+    &.do {
+      border-left: 3px solid #30b08f;
+    }
+
+    &.do-not {
+      border-left: 3px solid #e65d6e;
+    }
 
     a {
       color: #337ab7;
       cursor: pointer;
 
       &:hover {
-        color: rgb(32, 160, 255);
+        color: #20a0ff;
       }
     }
   }
 
-  .info.do {
-    border-left: 3px solid #30b08f;
-  }
-
-  .info.do-not {
-    border-left: 3px solid #e65d6e;
+  .info-title {
+    font-weight: 500;
   }
 
   .props-table {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .right-menu {
     background: #ffffff;
     border-left: 1px solid #dfe6ec;
     margin-top: 100px;
+
+    a {
+      color: #2c3e50;
+      cursor: pointer;
+
+      &:hover {
+        color: #20a0ff;
+      }
+    }
   }
 
   .content-main {
     padding-right: 50px;
   }
+
+  .content-box {
+    border: 1px solid #dfe6ec;
+    padding: 8px 24px;
+    border-radius: 2px;
+    display: block;
+    line-height: 32px;
+    color: #2c3e50;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .component-naming-rule {
+    color: #20a0ff;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+
+  /*************
+   * Button
+   *************/
+  $color-red: #8a101b;
+  $color-orange: #da7c0c;
+  $color-yellow: #dfa904;
+  $color-green: #419241;
+  $color-blue: #1196bf;
+
+  .button {
+    text-align: center;
+    background: rgba(255,255,255,0);
+    cursor: pointer;
+    border-radius: 1em;
+    user-select: none;
+    display: inline-block;
+
+
+    &.medium {
+      font-size: 12px; padding: 0 18px; line-height: 22px;
+    }
+
+    &.small {
+      font-size: 11px; padding: 0 14px; line-height: 15px;
+    }
+
+    &.red {
+      color: $color-red; border: solid 1px $color-red;
+
+      &:hover {
+        color: #ffffff; background: $color-red;
+      }
+    }
+
+    &.orange {
+      color: $color-orange; border: solid 1px $color-orange;
+
+      &:hover {
+        color: #ffffff; background: $color-orange;
+      }
+    }
+
+    &.green {
+      color: $color-green; border: solid 1px $color-green;
+
+      &:hover {
+        color: #ffffff; background: $color-green;
+      }
+    }
+
+    &.blue {
+      color: $color-blue; border: solid 1px $color-blue;
+
+      &:hover {
+        color: #ffffff; background: $color-blue;
+      }
+    }
+
+    &:active {
+      position: relative; top: 1px;
+    }
+  }
 }
+
+
+
+

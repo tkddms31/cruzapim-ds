@@ -11,7 +11,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: "DM Sans", sans-serif;
+  // font-family: "DM Sans", sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 label {
@@ -104,7 +105,7 @@ aside {
   border-radius: 2px;
   display: block;
   line-height: 32px;
-  font-size: 16px;
+  font-size: 14px;
   color: #2c3e50;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -120,7 +121,7 @@ aside {
 }
 
 .app-container {
-  padding: 50px 0 0 30px;
+  padding: 50px 0 100px 30px;
 }
 
 
