@@ -1,5 +1,5 @@
 <template>
-  <div class="foundation-container">
+  <div class="app-container foundation-container">
     <aside>Colors</aside>
   </div>
 </template>

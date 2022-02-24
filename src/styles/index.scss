@@ -4,13 +4,14 @@
 @import './element-ui.scss';
 @import './sidebar.scss';
 @import './btn.scss';
+@import './contents.scss';
 
 body {
   height: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 label {
@@ -104,7 +105,6 @@ aside {
   display: block;
   line-height: 32px;
   font-size: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: #2c3e50;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -119,15 +119,10 @@ aside {
   }
 }
 
-//main-container全局样式
 .app-container {
-  padding: 20px;
+  padding: 50px 0 0 30px;
 }
 
-.components-container {
-  margin: 30px 50px;
-  position: relative;
-}
 
 .pagination-container {
   margin-top: 30px;

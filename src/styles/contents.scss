@@ -1,0 +1,62 @@
+
+.app-container {
+  .title {
+    font-size: 28px;
+  }
+  .sub-title{
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .sub-sub-title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .description {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .info {
+    background: #eef1f6;
+    padding: 8px 24px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    display: block;
+    line-height: 32px;
+    font-size: 16px;
+    color: #2c3e50;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    a {
+      color: #337ab7;
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(32, 160, 255);
+      }
+    }
+  }
+
+  .info.do {
+    border-left: 3px solid #30b08f;
+  }
+
+  .info.do-not {
+    border-left: 3px solid #e65d6e;
+  }
+
+  .props-table {
+    font-size: 15px;
+  }
+
+  .right-menu {
+    background: #ffffff;
+    border-left: 1px solid #dfe6ec;
+    margin-top: 100px;
+  }
+
+  .content-main {
+    padding-right: 50px;
+  }
+}

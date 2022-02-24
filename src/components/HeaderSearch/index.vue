@@ -37,6 +37,9 @@ export default {
   computed: {
     routes() {
       return this.$router.options.routes
+    },
+    device() {
+      return this.$store.state.app.device
     }
   },
   watch: {
@@ -47,15 +50,21 @@ export default {
       this.initFuse(list)
     },
     show(value) {
-      if (value) {
-        document.body.addEventListener('click', this.close)
-      } else {
-        document.body.removeEventListener('click', this.close)
+      if (this.device === 'mobile') {
+        if (value) {
+          document.body.addEventListener('click', this.close)
+        } else {
+          document.body.removeEventListener('click', this.close)
+        }
       }
+    },
+    device(value) {
+      this.show = value !== 'mobile'
     }
   },
   mounted() {
     this.searchPool = this.generateRoutes(this.routes)
+    if (this.device !== 'mobile') this.show = true
   },
   methods: {
     click() {
