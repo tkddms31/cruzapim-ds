@@ -109,12 +109,6 @@ const asyncRoutes = [
         meta: { title: 'Markdown' }
       },
       {
-        path: 'json-editor',
-        component: 'views/components-demo/json-editor',
-        name: 'JsonEditorDemo',
-        meta: { title: 'Json Editor' }
-      },
-      {
         path: 'split-pane',
         component: 'views/components-demo/split-pane',
         name: 'SplitpaneDemo',

@@ -9,12 +9,12 @@
   .title2{
     font-size: 22px;
     font-weight: 500;
-    margin: 30px 0 16px 0;
+    margin: 40px 0 16px 0;
   }
   .title3 {
     font-size: 16px;
     font-weight: 500;
-    margin-top: 20px 0 16px 0;
+    margin: 30px 0 16px 0;
   }
   .description {
     font-weight: 500;
@@ -105,7 +105,51 @@
     margin-bottom: 15px;
   }
 
+  .example-box {
+    border: 1px solid #dfe6ec;
+    border-radius: 10px;
+    display: block;
+    line-height: 32px;
+    color: #2c3e50;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
+  .preview {
+    padding: 25px;
+  }
+
+  .playground {
+    padding: 8px 24px;
+  }
+
+  .style-board {
+    padding: 8px 24px;
+    display: block;
+    line-height: 32px;
+    color: #2c3e50;
+    background: #eef1f6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    button {
+      border: none;
+      margin-right: 20px;
+      background: #eef1f6;
+      color: #2c3e50;
+      font-weight: 600;
+
+      &:hover {
+        background: #dfe6ec;
+      }
+    }
+
+    i {
+      color: #2c3e50;
+      font-weight: 600;
+    }
+  }
   /*************
    * Button
    *************/

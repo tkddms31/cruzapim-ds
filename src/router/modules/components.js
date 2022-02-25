@@ -17,7 +17,7 @@ const componentsRouter = {
     },
     {
       path: 'button',
-      component: () => import('@/views/components-demo/button'),
+      component: () => import('@/views/components-demo/button-demo'),
       name: 'ButtonDemo',
       meta: { title: 'Button' }
     }

@@ -19,18 +19,6 @@ const devTestRouter = {
       meta: { title: 'Tinymce' }
     },
     {
-      path: 'markdown',
-      component: () => import('@/views/dev-test/markdown'),
-      name: 'MarkdownDemo',
-      meta: { title: 'Markdown' }
-    },
-    {
-      path: 'json-editor',
-      component: () => import('@/views/dev-test/json-editor'),
-      name: 'JsonEditorDemo',
-      meta: { title: 'JSON Editor' }
-    },
-    {
       path: 'split-pane',
       component: () => import('@/views/dev-test/split-pane'),
       name: 'SplitpaneDemo',
