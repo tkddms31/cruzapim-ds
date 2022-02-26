@@ -13,18 +13,6 @@ const devTestRouter = {
   },
   children: [
     {
-      path: 'tinymce',
-      component: () => import('@/views/dev-test/tinymce'),
-      name: 'TinymceDemo',
-      meta: { title: 'Tinymce' }
-    },
-    {
-      path: 'split-pane',
-      component: () => import('@/views/dev-test/split-pane'),
-      name: 'SplitpaneDemo',
-      meta: { title: 'SplitPane' }
-    },
-    {
       path: 'avatar-upload',
       component: () => import('@/views/dev-test/avatar-upload'),
       name: 'AvatarUploadDemo',
